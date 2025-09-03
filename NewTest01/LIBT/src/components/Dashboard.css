@@ -1,0 +1,10 @@
+.main-section {
+    min-height: 600px;
+    background-color: #4c648f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+}

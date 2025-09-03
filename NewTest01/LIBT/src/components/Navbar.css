@@ -1,0 +1,90 @@
+/* Navbar general styles */
+.navbar {
+  width: 100%;
+  background-color: #0C2340;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 40px;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #FFD700;
+}
+
+/* Apply Now button */
+.apply-btn {
+  background-color: #FFD700;
+  color: #0C2340;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #f1c40f;
+}
+
+/* Mobile toggle */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #0C2340;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

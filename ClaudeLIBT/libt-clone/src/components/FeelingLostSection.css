@@ -1,0 +1,225 @@
+/* ===== FEELING LOST MAIN SECTION ===== */
+.feeling-lost-main-section {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+.feeling-lost-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ===== SECTION HEADER ===== */
+.feeling-lost-header-section {
+  text-align: center;
+  max-width: 700px;
+}
+
+.feeling-lost-title-container {
+  margin-bottom: 20px;
+}
+
+.feeling-lost-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a1f44;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.feeling-lost-description-container {
+  margin-bottom: 0;
+}
+
+.feeling-lost-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== SUBJECT CATEGORIES SECTION ===== */
+.subject-categories-section {
+  width: 100%;
+}
+
+.subject-categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Subject Category Items */
+.subject-category-item-container {
+  display: flex;
+}
+
+.subject-category-button {
+  width: 100%;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 30px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.subject-category-button:hover {
+  border-color: #eca107;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.subject-category-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Subject Icons */
+.subject-icon-container {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Subject Titles */
+.subject-title-container {
+  text-align: center;
+}
+
+.subject-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0a1f44;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Subject Descriptions */
+.subject-description-container {
+  text-align: center;
+}
+
+.subject-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== CALL TO ACTION SECTION ===== */
+.feeling-lost-cta-section {
+  width: 100%;
+  text-align: center;
+}
+
+.feeling-lost-cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CTA Buttons */
+.view-all-courses-button {
+  background: #eca107;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 180px;
+}
+
+.view-all-courses-button:hover {
+  background: #d39e00;
+}
+
+.speak-advisor-button {
+  background: transparent;
+  color: #0a1f44;
+  border: 2px solid #0a1f44;
+  padding: 13px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 180px;
+}
+
+.speak-advisor-button:hover {
+  background: #0a1f44;
+  color: white;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .feeling-lost-main-section {
+    padding: 60px 0;
+  }
+  
+  .feeling-lost-container {
+    gap: 40px;
+  }
+  
+  .feeling-lost-title {
+    font-size: 2rem;
+  }
+  
+  .feeling-lost-description {
+    font-size: 1.1rem;
+  }
+  
+  .subject-categories-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .subject-category-button {
+    padding: 25px 15px;
+  }
+  
+  .subject-icon-container {
+    font-size: 2.5rem;
+  }
+  
+  .subject-title {
+    font-size: 1.2rem;
+  }
+  
+  .feeling-lost-cta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .view-all-courses-button,
+  .speak-advisor-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feeling-lost-title {
+    font-size: 1.8rem;
+  }
+  
+  .subject-categories-container {
+    gap: 15px;
+  }
+  
+  .subject-category-button {
+    padding: 20px 15px;
+  }
+}
