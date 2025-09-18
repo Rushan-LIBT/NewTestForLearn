@@ -1,6 +1,10 @@
 import './Header.css';
+import { Link } from 'react-router-dom';
+import libtLogo from '../../assets/libt-logo.png';
+import CoursesMenu from '../CoursesMenu/CoursesMenu';
 
-const Header = () => {
+
+const Header = ({ contactInfo = { email, phone } }) => {
   return (
     <header className="header">
       
@@ -12,13 +16,13 @@ const Header = () => {
             {/* Email Contact */}
             <div className="email-contact-container">
               <span className="contact-icon">📧</span>
-              <span>enquiries@libt.co.uk</span>
+              <span>{contactInfo.email}</span>
             </div>
             
             {/* Phone Contact */}
             <div className="phone-contact-container">
               <span className="contact-icon">📞</span>
-              <span>+44-20-3870-5111</span>
+              <span>{contactInfo.phone}</span>
             </div>
             
             {/* Login Button */}
@@ -37,21 +41,21 @@ const Header = () => {
         <div className="navigation-container">
           
           {/* Logo Section */}
-          <a href="/" className="logo-link">
+          <Link to="/" className="logo-link">
           <div className="logo-section-container">
             <img 
-              src="https://cdn.prod.website-files.com/5f0da8fd320acd2df8b13eb1/63ff59fb0b01cb563976beda_LIBT_Main_Logo_White.png" 
+              src={libtLogo}
               alt="LIBT Logo" 
               className="logo-image"
             />
           </div>
-          </a>
+          </Link>
 
           {/* Menu Section */}
           <div className="menu-section-container">
             <ul className="navigation-menu-list">
               <li className="menu-item-container">
-                <a href="#" className="menu-link">Courses</a>
+                <CoursesMenu />
               </li>
 
               <li className="menu-item-container">
@@ -67,11 +71,11 @@ const Header = () => {
               </li>
 
               <li className="menu-item-container">
-                <a href="#" className="menu-link">About</a>
+                <Link to="/about" className="menu-link">About</Link>
               </li>
 
               <li className="menu-item-container">
-                <a href="#" className="menu-link">Contact</a>
+                <Link to="/contact" className="menu-link">Contact</Link>
               </li>
             </ul>
           </div>

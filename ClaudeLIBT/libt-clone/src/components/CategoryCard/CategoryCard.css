@@ -1,0 +1,103 @@
+/* ===== CATEGORY CARD STYLES ===== */
+.subject-category-item-container {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.subject-category-button {
+  width: 100%;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.subject-category-button:hover {
+  border-color: #eca107;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(236, 161, 7, 0.15);
+  background: #fffbf0;
+}
+
+.subject-category-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.subject-icon-container {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.subject-title-container {
+  margin-bottom: 8px;
+}
+
+.subject-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a365d;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.subject-description-container {
+  margin: 0;
+}
+
+.subject-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .subject-category-item-container {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .subject-category-button {
+    padding: 20px;
+  }
+
+  .subject-icon-container {
+    font-size: 2.5rem;
+  }
+
+  .subject-title {
+    font-size: 1.1rem;
+  }
+
+  .subject-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subject-category-button {
+    padding: 16px;
+  }
+
+  .subject-icon-container {
+    font-size: 2rem;
+  }
+
+  .subject-title {
+    font-size: 1rem;
+  }
+
+  .subject-description {
+    font-size: 0.85rem;
+  }
+}

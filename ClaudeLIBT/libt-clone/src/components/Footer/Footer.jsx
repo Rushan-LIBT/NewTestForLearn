@@ -1,7 +1,16 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import './Footer.css';
+import React from 'react';
+import QAA from '../../assets/QAA-member.png';
 
-const Footer = () => {
+const Footer = ({ 
+  contactInfo = {
+    phone: '+44 20 7262 0022',
+    email: 'info@libt.co.uk',
+    address: '51 Gloucester Place, London W1U 8JF'
+  },
+  description = "Leading provider of flexible higher education, delivering world-class qualifications from top UK universities to students worldwide."
+}) => {
   return (
     <footer className="footer">
       <div className="footer-main">
@@ -9,24 +18,23 @@ const Footer = () => {
           <div className="footer-content">
             <div className="footer-section">
               <div className="footer-logo">
-                <img src="/logo.svg" alt="LIBT" className="footer-logo-img" />
+                <img src={QAA} alt="LIBT" className="footer-logo-img" />
               </div>
               <p className="footer-description">
-                Leading provider of flexible higher education, delivering world-class 
-                qualifications from top UK universities to students worldwide.
+                {description}
               </p>
               <div className="footer-contact">
                 <div className="contact-item">
                   <Phone size={16} />
-                  <span>+44 20 7262 0022</span>
+                  <span>{contactInfo.phone}</span>
                 </div>
                 <div className="contact-item">
                   <Mail size={16} />
-                  <span>info@libt.co.uk</span>
+                  <span>{contactInfo.email}</span>
                 </div>
                 <div className="contact-item">
                   <MapPin size={16} />
-                  <span>51 Gloucester Place, London W1U 8JF</span>
+                  <span>{contactInfo.address}</span>
                 </div>
               </div>
             </div>

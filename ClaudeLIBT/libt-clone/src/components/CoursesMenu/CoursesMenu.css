@@ -1,0 +1,51 @@
+/* Additional custom styles for CoursesMenu component */
+.courses-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Smooth transitions */
+.courses-menu-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.courses-menu-item {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Custom scrollbar for long lists */
+.courses-menu-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.courses-menu-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.courses-menu-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.courses-menu-content::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .courses-menu-container .MuiMenu-paper {
+    width: 95vw !important;
+    left: 2.5vw !important;
+  }
+
+  .courses-menu-content {
+    flex-direction: column !important;
+  }
+
+  .courses-menu-left,
+  .courses-menu-right {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+}

@@ -1,7 +1,7 @@
 /* ===== HERO MAIN SECTION ===== */
 .hero-main-section {
   position: relative;
-  min-height: 700px;
+  min-height: 600px;
   display: flex;
   align-items: center;
 }
@@ -28,8 +28,8 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  min-height: 700px;
-  background-image: url(https://cdn.prod.website-files.com/5f0da8fd320acd2df8b13eb1/6465f19ddf60830cc742931a_LIBT_Hero_Image.png);
+  min-height: 600px;
+  background-image: url('../../assets/HeroSectionImage.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
@@ -85,35 +85,6 @@
   opacity: 0.9;
   color: #eca107;
   font-weight: 500;
-}
-
-/* ===== HERO FEATURES SECTION ===== */
-.hero-features-section {
-  margin-top: 20px;
-}
-
-.hero-features-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-.feature-item-container {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: white;
-}
-
-.feature-icon {
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
-.feature-text {
-  font-size: 0.95rem;
-  font-weight: 400;
-  opacity: 0.9;
 }
 
 /* ===== HERO SEARCH SECTION ===== */
@@ -187,54 +158,9 @@
   background: #d39e00;
 }
 
-/* ===== HERO STATS SECTION ===== */
-.hero-stats-section {
-  margin-top: 60px;
-}
-
-.hero-stats-container {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-/* Stat Item Containers */
-.stat-item-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.stat-number-container {
-  display: flex;
-  justify-content: center;
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #eca107;
-  line-height: 1;
-}
-
-.hero-align{
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  flex-direction: column;
-}
-
-.stat-label-container {
-  display: flex;
-  justify-content: center;
-}
-
-.stat-label {
-  font-size: 1rem;
-  opacity: 0.8;
-  font-weight: 500;
+/* ===== HOME PAGE STYLES ===== */
+.home-page {
+  min-height: 100vh;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -263,19 +189,6 @@
   
   .hero-description-text {
     font-size: 1rem;
-  }
-  
-  .hero-features-container {
-    gap: 15px;
-    flex-direction: column;
-  }
-  
-  .feature-item-container {
-    gap: 6px;
-  }
-  
-  .feature-text {
-    font-size: 0.9rem;
   }
   
   .hero-search-container {
